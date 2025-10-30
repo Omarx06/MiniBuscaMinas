@@ -7,9 +7,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
-        Tablero tablero = new Tablero(5,5,3); // filas, columnas, minas
-        Scene scene = new Scene(tablero.getGrid(), 300, 300);
-        primaryStage.setTitle("Mini-Buscaminas");
+        Tablero tablero = new Tablero(5, 5, 3);
+        Scene scene = new Scene(tablero.getRoot(), 400, 450);
+        primaryStage.setTitle(" Mini-Buscaminas");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
