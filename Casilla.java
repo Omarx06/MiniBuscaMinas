@@ -1,6 +1,7 @@
 package com.example.minibuscaminas.minibuscaminas;
 
 import javafx.scene.control.Button;
+
 public class Casilla {
     private int fila;
     private int columna;
@@ -12,11 +13,14 @@ public class Casilla {
     public Casilla(int fila, int columna) {
         this.fila = fila;
         this.columna = columna;
+        this.mina = false;
+        this.descubierta = false;
+        this.minasAdyacentes = 0;
         boton = new Button(" ");
-        boton.setPrefSize(50, 50);
+        boton.setPrefSize(45, 45);
+        boton.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
     }
 
-    // Getters y setters
     public Button getBoton() {
         return boton;
     }
